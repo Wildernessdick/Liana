@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <script src="demo.js"></script>    
     <link rel="stylesheet" href="demo.css" />
     <link
       rel="stylesheet"
@@ -14,86 +15,76 @@
   <body>
     <section class="nav1">
       <div class="div1">
-        <a href="#">News</a>
-        <a href="#">Intranet</a>
-        <select class="form-select" aria-label="Default select example">
+        <a href="news.html">News</a>
+        <a href="intranet.html">Intranet</a>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
           <option value="eng">In English</option>
           <option value="fin">Suomeksi</option>
           <option value="adu">Adûnaic</option>
         </select>
       </div>
     </section>
-
-    <section class="nav2">
-      
+    <!--site navication part 1-->
+    <section class="nav2">      
       <div class="nav2-child" >
-      <img src="img/logo.svg" alt="logo width="100" height="50">
-      <a href="#">Company</a>
-      <a href="#">Products</a>
-      <a href="#">Contact Us</a>
-    </div>
-   
+        <a href="index.html"> <img src="img/logo.svg" alt="logo width="100" height="50"></a>
+      <a href="company.html">Company</a>
+      <a href="products.html">Products</a>
+      <a href="contactus.html">Contact Us</a>
+    </div>   
       <div class="nav2-child2"> 
         <input placeholder="Search"/> <button type="button" class="btn btn-success">Search</button>
-      </div>
-  
+      </div>  
     </section>
-
     <section>
       <div class="div2">
         <table >
           <tr>
-            <td><h2>Software fueling digital marketing</h2>      </td>
-         
+            <td><h2>Software fueling digital marketing</h2></td>         
           </tr>
           <tr>
-            <td><button type="button" class="btn btn-success">Learn more</button></td>
-         
-          </tr>
-        </table>
-           
-        
-      </div>
+            <td><button type="button" class="btn btn-success" onclick="location.href='products.html'">Learn more</button></td>
+            </tr>
+        </table></div>
     </section>
-
+<!--site navication part 2-->
     <section >
       <div class="div3">
         <div class="div3-parent">
           <div class="div3-child1">
             <div class="container"></div>
-            <div class="centered"><a href="#">Company</a></div>
+            <div class="centered"><a href="company.html">Company</a></div>
           </div>
           <div class="div3-child2">
             <div class="container"></div>
-            <div class="centered"><a href="#">Products</a></div>
+            <div class="centered"><a href="products.html">Products</a></div>
           </div>
           <div class="div3-child3">
             <div class="container"></div>
-            <div class="centered"><a href="#">Contact Us</a></div>
+            <div class="centered"><a href="contactus.html">Contact Us</a></div>
           </div>
           <div class="div3-child4">
             <table>
               <tr>
-                <th rowspan="2" scope="col"><img src="img/case.png"/></th>
-                <th scope="col"><h2>3000</h2></th>
-                <th rowspan="2" scope="col"><img src="img/face.png"/></th>
-                <th scope="col"><h2>180</h2></th>
-                <th rowspan="2" scope="col"><img src="img/tellus.png"/></th>
-                <th scope="col"><h2>1000</h2></th>
+                <th rowspan="2"><img src="img/case.png"/></th>
+                <th><h2>3000</h2></th>
+                <th rowspan="2"><img src="img/face.png"/></th>
+                <th><h2>180</h2></th>
+                <th rowspan="2"><img src="img/tellus.png"/></th>
+                <th><h2>1000</h2></th>
               </tr>
               <tr>
                 <td>Clients</td>
                 <td>Employees</td>
-                <td>Dailu users</td>
+                <td>Daily users</td>
               </tr>
             </table>           
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section4">
-      
+<!--Lates news section-->
+    <section class="section4">      
         <div class="div4"><h5>Latest News</h5>
           <div class="div4-parent">
             <div class="div4-child1">
@@ -105,7 +96,7 @@
                   <th></th>
                 </tr>
                 <tr>
-                  <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                  <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                 </tr>
               </table>
             </div>
@@ -119,7 +110,7 @@
                   <th></th>
                 </tr>
                 <tr>
-                  <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                  <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                 </tr>
               </table>
             </div>
@@ -133,7 +124,7 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                    <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                   </tr>
                 </table>
               </div>
@@ -143,60 +134,65 @@
           </div>
         </div>
     </section>
-
+<!--References section-->
     <section>
       <div class="div5"><h5>References</h5>
         <div class="div5-parent">
-          <div class="div5-child"><table width="200">
+          <div class="div5-child">
+            <table>
             <tr>
-              <td><img src="img/Free-Vector-Bosch-Logo.jpg" alt="bosch" style="height:200px;"></td>           
+              <td><img src="img/Free-Vector-Bosch-Logo.png" alt="bosch" style="height:200px;"></td>           
             </tr>
             <tr>
-              <td><h5>Robert Bosch</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></td>           
+              <td><h5>Robert Bosch</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>           
             </tr>
           </table>
            </div>
-          <div class="div5-child2"><table width="200">
+          <div class="div5-child2">
+            <table >
             <tr>
               <td><img src="img/unnamed.png" alt="bodyshop" style="height:200px;"></td>           
             </tr>                 
-              <td><h5>The Body Shop</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></td>           
+              <td><h5>The Body Shop</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>           
             </tr>
           </table>
            </div>
-          <div class="div5-child3"> <table width="200">
+          <div class="div5-child3"> 
+            <table >
             <tr>
               <td><img src="img/691.png" alt="lapland" style="height:200px;"></td>           
             </tr>
             <tr>
-              <td><h5>Lapland Hotels</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></td>           
+              <td><h5>Lapland Hotels</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>           
             </tr>
           </table>
           </div>
-          <div class="div5-child4"> <table width="200">
+          <div class="div5-child4"> 
+            <table >
             <tr>
               <td><img src="img/lataus.png" alt="meatballs" style="height:200px;"></td>           
             </tr>
             <tr>
-              <td><h5>IKEA</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></td>           
-            </tr>
+              <td><h5>IKEA</h5><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>           
+            </tr> 
           </table>
           </div>
           </div>
       </div>
-  </section>
-    </section>
-
+  </section>  
+<!--Newsletter section-->
     <section>
       <div class="div6"><h5>Subscripe to our newsletter</h5>
       <pre>Follow our story and get the lastest promotial
 news about our product and events </pre>
-<input placeholder="Your email address"/> <button type="button" class="btn btn-success">Subscribe</button></div>
-    </section>
+
+<input placeholder="Your email address" /> <button type="button" class="btn btn-success"  onclick="location.href='newsletter.html'" >Subscribe</button></div>
+
+</section>
+    <!--Footer section-->
     <section>
     <footer class="footer">
-      <div class="footer-child">
-        
+      <div class="footer-child">        
         <table>
           <tr>
             <th><h5>Liana Technologies</h5></th>
@@ -205,44 +201,54 @@ news about our product and events </pre>
           <tr>
             <td><pre>
 Sales and inquiries
-Email:sales@lianatech.com
+Email: sales@lianatech.com
 Phone: +358 10 387 7053</pre>
             </td>
-            <td><button type="button" class="btn btn-success">Contact us</button></td>
+            <td><button type="button" class="btn btn-success" onclick="location.href='contactus.html'">Contact us</button></td>
           </tr>
-        </table>
-        
-
-
+        </table>     
     </div>
       <div class="footer-child2">     
         <table >
+              <!--Site navication 3-->
           <tr>
-            <td>
-              <a href="#">Company</a>
-              <a href="#">Products</a>
-              <a href="#">Contact Us</a></div>
-            </td>         
+            <td><a href="company.html">Company</a></td>
+            <td><a href="products.html">Products</a></td>
+            <td><a href="contactus.html">Contact Us</a></td>
+            <td><a href="news.html">News</a></div></th>
+            <td><a href="intranet.html">Intranet</a></td>
           </tr>
           <tr>
-            <td>    
-              <a href="#">
-                <img src="img/icons8-facebook-48.png" style="width:42px;height:42px;">
-              </a>          
-            <a href="#">
-              <img src="img/icons8-linkedin-64.png" style="width:42px;height:42px;">
-            </a>
-            <a href="#">
-              <img src="img/icons8-facebook-64.png" style="width:42px;height:42px;">
-            </a>
-          </td>
-         
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
           </tr>
-        </table>
-
-    
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><a href="https://www.lianatech.com/resources/blog.rss">
+              <img src="img/icons8-rss-64.png" style="width:42px;height:42px;">
+            </a>  </td>        
+            <td> <a href="https://www.facebook.com/LianaTechFI">
+                        <img src="img/icons8-facebook-48.png" style="width:42px;height:42px;">
+                      </a>     </td>
+            <td>    <a href="https://www.linkedin.com/company/liana-technologies">
+                      <img src="img/icons8-linkedin-64.png" style="width:42px;height:42px;">
+                    </a></td>
+            <td><a href="https://twitter.com/LianaTech_FI">
+                      <img src="img/icons8-twitter-circled-64.png" style="width:42px;height:42px;">
+                    </a></td>
+          </tr>
+        </table>    
     </footer>
     <section>
-
   </body>
 </html>
