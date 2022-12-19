@@ -1,19 +1,31 @@
 body {
   background: white;
+  height: 100%;
 }
 div {
   text-align: center;
   padding: 10px;
 }
+footer {
+  min-height: 30rem;
+}
 a {
   color: white !important;
   text-decoration: none;
 }
-table,
-th,
-tr {
-  border: 1px solid gray;
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .nav1 {
   background-color: #4d8931;
   height: 3rem;
@@ -52,39 +64,14 @@ tr {
   width: 100%;
 }
 .div3 {
-  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .div3 {
   height: 30rem;
 }
-.div6 {
-  border-top: 1px solid gray;
-}
-.section4 {
-  background-color: #edeef0;
-}
-
-.footer {
-  padding: 10px;
-  background-color: black;
-  color: white;
-  height: 10rem;
-}
-
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.div3-child,
-.div4-child {
+.div3-parent {
   display: grid;
 }
 .div3-child1,
@@ -92,6 +79,7 @@ tr {
 .div3-child3 {
   color: white;
   height: 300px;
+  width: 300px;
   margin: 10px;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
   background-size: cover;
@@ -99,15 +87,21 @@ tr {
   text-align: center;
 }
 .div3-child1 {
+  grid-area: 1 / 1 / 2 / 2;
   background: url("img/pexels-christina-morillo-1181533.jpg");
 }
 .div3-child2 {
+  grid-area: 1 / 2 / 2 / 3;
   background: url("img/pexels-fox-1595385.jpg");
 }
 .div3-child3 {
+  grid-area: 1 / 3 / 2 / 4;
   background: url("img/pexels-fauxels-3184357.jpg");
 }
 .div3-child4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: 2 / 1 / 3 / 4;
 }
 .div3-child1 a,
@@ -116,7 +110,15 @@ tr {
   color: white;
   text-decoration: none;
 }
-
+.section4 {
+  background-color: #edeef0;
+}
+.div4-parent {
+  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .div4-child1,
 .div4-child2,
 .div4-child3 {
@@ -140,6 +142,10 @@ tr {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .div5-child {
@@ -154,6 +160,23 @@ tr {
 .div5-child4 {
   grid-area: 1 / 4 / 2 / 5;
 }
+
+.div5 table,
+.div5 th,
+.div5 tr {
+  border: 1px solid gray;
+}
+.div6 {
+  border-top: 1px solid gray;
+}
+
+.footer {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  height: 10rem;
+}
+
 .footer-child,
 .footer-child pre {
   color: white;
