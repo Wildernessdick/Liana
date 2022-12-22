@@ -13,8 +13,13 @@
     <title>Liana Technologies - Recruitment Demo</title>
   </head>
   <body>
+
+
+      
+
+
     <section class="nav1">
-      <div class="div1">
+      <div class="nav1-child1">
         <a href="news.html">News</a>
         <a href="intranet.html">Intranet</a>
         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
@@ -40,7 +45,8 @@
       <div class="div2">
         <table >
           <tr>
-            <td><h2>Thank you for ordering our newsletter!</h2></td>         
+           
+            <td><h2 id="demo">Thank you for ordering our newsletter!</h2></td>         
           </tr>
           <tr>
             <td><button type="button" class="btn btn-success" onclick="location.href='news.html'">To news</button></td>
@@ -117,5 +123,20 @@ Phone: +358 10 387 7053</pre>
           </table>    
       </footer>
       <section>
+        <script>
+          var url = new URL(window.location.href );         
+          var params = url.searchParams; 
+          
+          var email = params.get("email");
+          console.log("Hello " + email);
+          try{
+            document.getElementById("demo").innerHTML = "Thank you "+email+", for ordering our newsletter!";
+            window.history.replaceState({}, document.title, "/Demo/" + "")
+            // To display email, and remove url parametr.
+        }catch(err){
+          console.log("oh dog")
+        }
+        
+          </script>
   </body>
 </html>

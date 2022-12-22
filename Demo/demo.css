@@ -12,7 +12,7 @@ footer {
 }
 a {
   color: white !important;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: large;
   margin: 0 5px;
 }
@@ -55,6 +55,7 @@ select {
 .nav1 {
   background-color: #4d8931;
   height: 3rem;
+  padding-right: 10px;
 }
 .nav2 {
   margin: auto;
@@ -70,10 +71,10 @@ select {
 }
 .nav2-child2 {
   float: right;
+  text-align: right;
 }
-.div1 {
-  position: absolute;
-  right: 0px;
+.nav1-child1 {
+  text-align: right;
 }
 .div2 {
   height: 25rem;
@@ -222,7 +223,6 @@ select {
   padding: 10px;
   background-color: black;
   color: white;
-  height: 10rem;
 }
 
 .footer-child,

@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <script src="demo.js"></script>    
+    <script src="demo.js"></script>  
+      
     <link rel="stylesheet" href="demo.css" />
     <link
       rel="stylesheet"
@@ -15,7 +16,7 @@
   <body>
   
     <section class="nav1">
-      <div class="div1">
+      <div class="nav1-child1">
         <a href="news.html">News</a>
         <a href="intranet.html">Intranet</a>
         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
@@ -95,11 +96,11 @@
               <div class="centered">
                 <table >
                 <tr>
-                  <th><p>27.07.2016</p></th>
+                  <th><p id="news1date">27.07.2016</p></th>
                   <th></th>
                 </tr>
                 <tr>
-                  <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                  <td colspan="2" ><p id="news1title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>
                 </tr>
               </table>
             </div>
@@ -109,11 +110,11 @@
               <div class="centered">       
                 <table >
                 <tr>
-                  <th><p>28.01.2016</p></th>
+                  <th><p id="news2date">28.01.2016</p></th>
                   <th></th>
                 </tr>
                 <tr>
-                  <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                  <td colspan="2" ><p id="news2title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>
                 </tr>
               </table>
             </div>
@@ -123,11 +124,11 @@
               <div class="centered">
                 <table >
                   <tr>
-                    <th><p>02.07.2015</p></th>
+                    <th><p id="news3date">02.07.2015</p></th>
                     <th></th>
                   </tr>
                   <tr>
-                    <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td colspan="2" ><p id="news3title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></td>
                   </tr>
                 </table>
               </div>
@@ -188,9 +189,12 @@
       <div class="div6"><h5>Subscripe to our newsletter</h5>
       <pre>Follow our story and get the lastest promotial
 news about our product and events </pre>
+<form name="newsletter"action="newsletter.html"   onsubmit="return validateForm()" >
+<input name="email" placeholder="Your email address"required /> 
+<button class="btn btn-success"  >Subscribe</button>
 
-<input placeholder="Your email address" /> <button type="button" class="btn btn-success"  onclick="location.href='newsletter.html'" >Subscribe</button></div>
-
+</form>
+</div>
 </section>
 
     <!--Footer section-->
@@ -261,6 +265,25 @@ Phone: +358 10 387 7053</pre>
         </table>    
     </footer>
     <section>
-   
+   <script>
+   /* Js animated numbers */
+    let counts = setInterval(countClientes);
+    let clients = 2820; //3000
+    let employess = 0; //180
+    let users = 820; //1000
+    
+    function countClientes() {
+      var clientCount = document.getElementById("clientCounter");
+      // var etCount = document.getElementById("employessCounter");
+      // var uCount = document.getElementById("usersCounter");
+      employessCounter.innerHTML = ++employess;
+      usersCounter.innerHTML = ++users;
+      clientCount.innerHTML = ++clients;
+    
+      if (clients === 3000) {
+        clearInterval(counts);
+      }
+    }
+    </script>
   </body>
 </html>
