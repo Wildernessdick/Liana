@@ -16,17 +16,6 @@ function validateForm() {
   }
 }
 
-/* --Fetch-- */
-/* Title */
-/* Link */
-/* generator */
-/* description */
-/* language */
-/* pubDate */
-/* öastBioödDate */
-/* ttl */
-/* --Fetch-- */
-
 // I had problems with rss, so i hope my json workaround it's ok...
 
 window.onload = async function () {
