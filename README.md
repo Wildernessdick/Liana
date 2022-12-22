@@ -1,4 +1,4 @@
-# Liana Technologies Recruitment-Demo
+# Liana Technologies Recruitment Demo
 
 Coding Assignment: Front-End
 
